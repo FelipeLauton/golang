@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	// --NÚMEROS INTEIROS--
+	//--NÚMEROS INTEIROS--
 	var numero int64 = -1000000000
 	fmt.Println(numero)
 
@@ -21,7 +21,7 @@ func main() {
 	var numero4 byte = 123
 	fmt.Println(numero4)
 
-	// --NÚMEROS REAIS--
+	//--NÚMEROS REAIS--
 
 	var numeroReal1 float32 = 123.45
 	fmt.Println(numeroReal1)
@@ -32,7 +32,7 @@ func main() {
 	numeroReal3 := 12345.4
 	fmt.Println(numeroReal3)
 
-	// --STRINGS--
+	//--STRINGS--
 	
 	var str string = "Texto"
 	fmt.Println(str)
@@ -43,12 +43,12 @@ func main() {
 	char := 'B'
 	fmt.Println(char)
 
-	// --BOOLEAN--
+	//--BOOLEAN--
 
 	var booleano1 bool = true
 	fmt.Println(booleano1)
 
-	// --ERROR--
+	//--ERROR--
 	
 	var erro error
 	fmt.Println(erro)
