@@ -6,9 +6,6 @@ import (
 )
 
 func main() {
-	local := "rua dos loucos"
-
-	localTop := endereco.TipoDeEndereco(local)
-
-	fmt.Println(localTop)
+	tipoEndereco := enderecos.TipoDeEndereco("Avenida Coruscant")
+	fmt.Println(tipoEndereco)
 }
