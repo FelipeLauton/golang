@@ -4,7 +4,7 @@ import (
 	"crud/banco"
 	"encoding/json"
 	"fmt"
-	"io/ioutil"
+	"io"
 	"net/http"
 )
 
@@ -15,7 +15,7 @@ type usuario struct {
 }
 
 func CriarUsuario(w http.ResponseWriter, r *http.Request) {
-	corpoRequisicao, erro := ioutil.ReadAll(r.Body)
+	corpoRequisicao, erro := io.ReadAll(r.Body)
 	if erro != nil {
 		w.Write([]byte("Falha ao ler o corpo da requisição"))
 		return
