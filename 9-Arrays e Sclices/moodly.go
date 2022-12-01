@@ -16,12 +16,12 @@ func main() {
 	rand.Seed(time.Now().UnixNano())
 
 	args := os.Args[1:]
-
 	if len(args) != 1 {
 		fmt.Println("[your name]")
 		return
 	}
 	
+	name := args[0]
 
 	moods := [5]string{
 		"sad",
@@ -30,11 +30,7 @@ func main() {
 		"awesome",
 		"good",
 	}
+	n := rand.Intn(len(moods))
 
-	for turn := 0; turn < len(moods); turn++ {
-		n := rand.Intn(len(moods))
-
-		fmt.Printf("%v feels %v", args[1], moods[n])
-		return
-	}
+	fmt.Printf("%s feels %s", name, moods[n])
 }
