@@ -27,15 +27,17 @@ import (
 // ---------------------------------------------------------
 
 func main() {
-	scientistsNames := [...][5]string{
-		{"Albert", "Isaac", "Stephen", "Marie", "Charles"},
-		{"Einstein", "Newton", "Hawking", "Curie", "Darwin"},
-		{"time", "apple", "blackhole", "radium", "fittest"},
+	scientistsNames := [...][3]string{
+		{"First Name", "Last Name", "Nickname"},
+		{"Albert", "Einstein", "emc2"},
+		{"Isaac", "Newton", "apple"},
+		{"Stephen", "Hawking", "blackhole"},
+		{"Marie", "Curie", "radium"},
+		{"Charles", "Darwin", "fittest"},
 	}
 
 	for i := range scientistsNames {
 		n := scientistsNames[i]
-
 		fmt.Printf("%-15s %-15s %-15s\n", n[0], n[1], n[2])
 
 		if i == 0 {
